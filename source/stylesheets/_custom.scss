@@ -27,24 +27,27 @@ body{
 	}
 }
 
-// // MEDIA QUERIES
-// @media #{$small-and-down} {
-// 	h5{
-// 		font-size: 7px;
-// 	}
-// }
-// @media #{$medium-and-up} {
-// 	h5{
-// 		font-size: 15px;    	
-// 	}
-// }
-// @media #{$medium-and-down} {
-// 	h5{
+// MEDIA QUERIES
+@media #{$small-and-down} {
+	h5{
+		font-size: 10px;
+	}
+	h6{ 
+		font-size: 10px
+	}
+}
+@media #{$medium-and-up} {
+	h5{
+		font-size: 15px;    	
+	}
+}
+@media #{$medium-and-down} {
+	h5{
 		
-// 	}
-// }
-// @media #{$large-and-up} {
-// 	h5{
-// 	   font-size: 15px;    	 	
-// 	}
-// }
+	}
+}
+@media #{$large-and-up} {
+	h5{
+	   font-size: 18px;    	 	
+	}
+}
