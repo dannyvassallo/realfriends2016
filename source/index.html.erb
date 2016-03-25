@@ -4,59 +4,9 @@ title: Middleman 4 Boilerplate
 
 <!-- PUT YOUR CONTENT FOR THE HOMEPAGE HERE -->
 <div class="container black">
-	<div id="header" class="row">
-		<div class="col s10 offset-s1 center-align">
-			<h5 class="uppercase white-text">Pre-Order "The Home Inside My Head" to win exclusive prizes from</h5>
-			<img class="full-w" src="https://s3.amazonaws.com/myfangate.com/realfriends16/rf-logo-white.png">
-		</div>
-		<div class="row">
-			<div class="col s2 offset-s3">
-				<img class="full-w" src="https://s3.amazonaws.com/myfangate.com/realfriends16/RF_THIMH_CoverPhoto.jpg">
-			</div>
-			<div class="col s4 center-align">
-				<img class="full-w" src="https://s3.amazonaws.com/myfangate.com/realfriends16/rf-album-logo.png">
-				<p class="uppercase white-text"> Available May 27</p>
-			</div>
-			</div>
-		</div> 
-	<div class="row">
-		<h5 class="uppercase white-text center-align">Pre-Order the album to be entered to win this week's prize!</h5>
-		<h6 class="uppercase white-text center-align">Select a pre-order</h6>
-		<div class="col s4">
-			<img class="full-w" src="<%= lorem.image('640x640') %>">		
-		</div>
-		<div class="col s4">
-			<img class="full-w" src="<%= lorem.image('640x640') %>">		
-		</div>
-		<div class="col s4">
-			<img class="full-w" src="<%= lorem.image('640x640') %>">		
-		</div>				
-	</div>	
-	<div class="row">
-		<div class="col s4">
-			<img class="full-w" src="<%= lorem.image('640x640') %>">		
-		</div>
-		<div class="col s4">
-			<img class="full-w" src="<%= lorem.image('640x640') %>">		
-		</div>
-		<div class="col s4">
-			<img class="full-w" src="<%= lorem.image('640x640') %>">		
-		</div>				
-	</div>		
-<div class="row">
-		<h5 class="uppercase white-text center-align">After your pre-order, enter here!</h5>
-		<div class="col s6">
-			<img class="full-w" src="<%= lorem.image('800x800') %>">		
-		</div>
-		<div class="col s6">
-			<img class="full-w" src="<%= lorem.image('800x800') %>">		
-		</div>
-</div>	
-<div class ="row">
-		<h5 class="uppercase white-text center-align">Watch the new video for "colder quicker"</h5>
-		<div class="col s12">
-			<img class="full-w" src="<%= lorem.image('1920x1080') %>">
-		</div>
-</div>	
-		<h5 class="uppercase white-text center-align">Join the #homeinside Community</h5>		
+	<%= partial "partials/header" %>
+	<%= partial "partials/preorders" %>	
+	<%= partial "partials/contest" %>
+	<%= partial "partials/video" %>
+	<%= partial "partials/socials" %>	
 </div>
