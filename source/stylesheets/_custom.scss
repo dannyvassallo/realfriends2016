@@ -35,19 +35,31 @@ body{
 	h6{ 
 		font-size: 10px
 	}
+	p{
+		font-size: 8px
+	}
 }
 @media #{$medium-and-up} {
 	h5{
 		font-size: 15px;    	
+	}
+	p{
+		font-size: 12px
 	}
 }
 @media #{$medium-and-down} {
 	h5{
 		
 	}
+	p{
+		
+	}
 }
 @media #{$large-and-up} {
 	h5{
-	   font-size: 18px;    	 	
+	   font-size: 20px;    	 	
+	}
+	p{
+		font-size: 15px
 	}
 }
