@@ -47,14 +47,15 @@ body{
 		font-size: 12px
 	}
 }
-@media #{$medium-and-down} {
-	h5{
+
+// @media #{$medium-and-down} {
+// 	h5{
 		
-	}
-	p{
+// 	}
+// 	p{
 		
-	}
-}
+// 	}
+// }
 @media #{$large-and-up} {
 	h5{
 	   font-size: 20px;    	 	
