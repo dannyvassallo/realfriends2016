@@ -9,7 +9,64 @@
          url('../fonts/helvetica-bold-webfont.svg#helveticabold') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+.wood{
+  opacity: 0.6;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0 auto !important;
+  letter-spacing: 0.3rem;
+}
+
+.text-shadow{
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+.cta{
+  margin-top: 5% !important;
+  @extend .text-shadow;
+}
+
+.parallax-container{
+  height: inherit;
+}
+
+.parallax{
+  z-index: 0;
+}
+
+#header .container{
+  z-index: 9999;
+  position: relative;
+}
+
+.logo{
+  margin-bottom: -7%;
+  z-index: 9999;
+  position: relative;
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
+  margin-top: -4%;
+}
+
+.album-mini{
+  z-index: 9999;
+  position: relative;
+}
+
+.polaroid-wrapper{
+    perspective: 1000px;
+}
+
+.polaroid-img{
+  -ms-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+  margin-bottom: -40%;
+  z-index: 2;
 }
 
 .row{
