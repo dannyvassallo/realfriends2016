@@ -9,7 +9,69 @@
          url('../fonts/helvetica-bold-webfont.svg#helveticabold') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+.wood{
+  opacity: 0.6;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0 auto !important;
+  letter-spacing: 0.3rem;
+}
+
+.text-shadow{
+  text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+.cta{
+  margin-top: 5% !important;
+  @extend .text-shadow;
+}
+
+.parallax-container{
+  height: inherit;
+}
+
+.parallax{
+  z-index: 0;
+}
+
+#header .container{
+  z-index: 9999;
+  position: relative;
+}
+
+.logo{
+  margin-bottom: -7%;
+  z-index: 9999;
+  position: relative;
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
+  margin-top: -4%;
+}
+
+.album-mini{
+  z-index: 9999;
+  position: relative;
+}
+
+.polaroid-wrapper{
+    perspective: 1000px;
+}
+
+.polaroid-img{
+  -ms-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+  margin-bottom: -40%;
+  z-index: 2;
+}
+
+.row{
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .full-w{
@@ -28,11 +90,17 @@ body{
 }
 
 // MEDIA QUERIES
+@media (max-width: 1127px){
+  .available-now h3{
+    font-size: 25px;
+  }
+}
+
 @media #{$small-and-down} {
 	h5{
 		font-size: 10px;
 	}
-	h6{ 
+	h6{
 		font-size: 10px
 	}
 	p{
@@ -41,7 +109,7 @@ body{
 }
 @media #{$medium-and-up} {
 	h5{
-		font-size: 15px;    	
+		font-size: 15px;
 	}
 	p{
 		font-size: 12px
@@ -50,17 +118,57 @@ body{
 
 // @media #{$medium-and-down} {
 // 	h5{
-		
+
 // 	}
 // 	p{
-		
+
 // 	}
 // }
 @media #{$large-and-up} {
 	h5{
-	   font-size: 20px;    	 	
+	   font-size: 20px;
 	}
 	p{
 		font-size: 15px
 	}
+}
+
+.margin-bottom{
+  margin-bottom: 2%;
+}
+
+footer.page-footer {
+  margin-top: 0 !important;
+}
+
+.parallax-container:after{
+  content: "";
+  width: 100%;
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.2;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 78%, rgba(0,0,0,0) 86%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 78%,rgba(0,0,0,0) 86%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 78%,rgba(0,0,0,0) 86%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.video-container{
+  border: 20px solid rgba(255,255,255,1);
+}
+
+.bundle{
+  margin-top: 20px;
+}
+
+#preorders,
+#socials,
+#contest,
+#video{
+  h4{
+    margin-top: 4% !important;
+    margin-bottom: 4% !important;
+  }
 }

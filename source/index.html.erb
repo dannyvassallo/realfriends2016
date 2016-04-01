@@ -3,10 +3,33 @@ title: Middleman 4 Boilerplate
 ---
 
 <!-- PUT YOUR CONTENT FOR THE HOMEPAGE HERE -->
-<div class="container black">
-	<%= partial "partials/header" %>
-	<%= partial "partials/preorders" %>	
-	<%= partial "partials/contest" %>
-	<%= partial "partials/video" %>
-	<%= partial "partials/socials" %>	
-</div>
+<section class="parallax-container" id="header">
+  <div class="container">
+    <%= partial "partials/header" %>
+  </div>
+  <div class="parallax"><img class="wood" src="https://s3.amazonaws.com/myfangate.com/realfriends16/floorbg.jpg"></div>
+</section>
+<section class="parallax-container" id="preorders">
+  <div class="container">
+  	<%= partial "partials/preorders" %>
+  </div>
+  <div class="parallax"><img class="wood" src="https://s3.amazonaws.com/myfangate.com/realfriends16/doorhandle.jpg"></div>
+</section>
+<section class="parallax-container" id="contest">
+  <div class="container">
+    <%= partial "partials/contest" %>
+  </div>
+  <div class="parallax"><img class="wood" src="https://s3.amazonaws.com/myfangate.com/realfriends16/RF_Hallway2.jpg"></div>
+</section>
+<section class="parallax-container" id="video">
+  <div class="container">
+    <%= partial "partials/video" %>
+  </div>
+  <div class="parallax"><img class="wood" src="https://s3.amazonaws.com/myfangate.com/realfriends16/globe.jpg"></div>
+</section>
+<section class="parallax-container" id="socials">
+  <div class="container">
+    <%= partial "partials/socials" %>
+  </div>
+  <div class="parallax"><img class="wood" src="https://s3.amazonaws.com/myfangate.com/realfriends16/lamp.jpg"></div>
+</section>
