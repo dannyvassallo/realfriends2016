@@ -90,6 +90,12 @@ body{
 }
 
 // MEDIA QUERIES
+@media (max-width: 1127px){
+  .available-now h3{
+    font-size: 25px;
+  }
+}
+
 @media #{$small-and-down} {
 	h5{
 		font-size: 10px;

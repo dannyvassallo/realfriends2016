@@ -1,6 +1,10 @@
 // ADD YOUR JS HERE
 function resizeH(){
-  $('.available-now').height($('.album-mini img').height());
+  if($(window).width() <= 600){
+    $('.available-now').css('height', 'auto');
+  } else {
+    $('.available-now').height($('.album-mini img').height());
+  }
 }
 
 $(function(){
