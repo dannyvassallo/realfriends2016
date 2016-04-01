@@ -3,14 +3,30 @@
   background-color: black;
 }
 #preorders{
-	background-color: #b06738;
+	background-color: black;
+  .container{
+    position: relative;
+    z-index: 10;
+  }
 }
 #contest{
-	background-image: url('https://s3.amazonaws.com/myfangate.com/realfriends16/RF_Hallway2.jpg');
+  background-color: black;
+  .container{
+    position: relative;
+    z-index: 10;
+  }
 }
 #video{
-	background-color: #b06738;
+  background-color: black;
+  .container{
+    position: relative;
+    z-index: 10;
+  }
 }
 #socials{
-	background-image: url('');
+  background-color: black;
+  .container{
+    position: relative;
+    z-index: 10;
+  }
 }
