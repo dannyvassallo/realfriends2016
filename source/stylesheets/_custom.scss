@@ -178,3 +178,50 @@ footer.page-footer {
   font-size: 22px;
  }
 }
+
+// Parallax fallback
+
+@media #{$medium-and-down} {
+  .parallax{
+    display: none;
+  }
+  #header:before,
+  #preorders:before,
+  #contest:before,
+  #video:before,
+  #socials:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  #header:before{
+    background-image: url("https://s3.amazonaws.com/myfangate.com/realfriends16/floorbg.jpg");
+  }
+  #preorders:before{
+    background-image: url("https://s3.amazonaws.com/myfangate.com/realfriends16/doorhandle.jpg");
+  }
+  #contest:before{
+    background-image: url("https://s3.amazonaws.com/myfangate.com/realfriends16/RF_Hallway2.jpg");
+  }
+  #video:before{
+    background-image: url("https://s3.amazonaws.com/myfangate.com/realfriends16/globe.jpg");
+  }
+  #socials:before{
+    background-image: url("https://s3.amazonaws.com/myfangate.com/realfriends16/lamp.jpg");
+  }
+}
+
+
