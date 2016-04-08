@@ -311,3 +311,18 @@ span.error{
 .fearless{
   margin-top: 3% !important;
 }
+
+@media (min-width: 401px) and (max-width: 600px){
+  .hashtag{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px){
+  .hashtag{
+    font-size: 15px;
+  }
+  .enter{
+    font-size: 12px !important;
+  }
+}
