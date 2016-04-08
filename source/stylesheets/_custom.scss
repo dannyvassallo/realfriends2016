@@ -226,7 +226,7 @@ footer.page-footer {
 
 /* label color */
 input{
-  color: #fff !important;
+  color: #fff;
 }
 
 .input-field label {
@@ -302,4 +302,8 @@ input{
 
 #hidden_iframe{
   display: none;
+}
+
+span.error{
+  display: none !important;
 }
